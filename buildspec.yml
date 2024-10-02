@@ -6,12 +6,12 @@ phases:
       - echo "Installing AWS CLI"
       - pip install awscli
 
-post_build:
-  commands:
-    - echo "Deploying files to S3 with correct Content-Type"
-    - aws s3 cp index.html s3://your-bucket-name/ --content-type "text/html" --acl public-read
-    - aws s3 cp styles.css s3://your-bucket-name/ --content-type "text/css" --acl public-read
-    - aws s3 cp ./images/ s3://your-bucket-name/images/ --recursive --acl public-read
+  post_build:
+    commands:
+      - echo "Deploying files to S3 with correct Content-Type"
+      - aws s3 cp ./ s3://your-bucket-name/ --recursive --exclude "*" --include "*.html" --content-type "text/html" --acl public-read
+      - aws s3 cp ./ s3://your-bucket-name/ --recursive --exclude "*" --include "*.css" --content-type "text/css" --acl public-read
+      - aws s3 cp ./images/ s3://your-bucket-name/images/ --recursive --acl public-read
 
 artifacts:
   files:
