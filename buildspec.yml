@@ -3,19 +3,18 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing required dependencies..."
-      - pip install awscli  # Ensure awscli is installed to use in the build process
-
-build:
-  commands:
-    - echo "Build phase not required for a static site"
+      - echo "Installing AWS CLI"
+      - pip install awscli
 
 post_build:
   commands:
-    - echo "Deploying website files to S3 with correct content types..."
-    - aws s3 cp ./ s3://vishal-lokhande.com/ --recursive --exclude "*.yml" --acl public-read --content-type "text/html" --metadata-directive REPLACE --exclude "styles.css"
-    - aws s3 cp ./styles.css s3://vishal-lokhande.com/styles.css --acl public-read --content-type "text/css"
+    - echo "Deploying files to S3 with correct Content-Type"
+    - aws s3 cp index.html s3://your-bucket-name/ --content-type "text/html" --acl public-read
+    - aws s3 cp styles.css s3://your-bucket-name/ --content-type "text/css" --acl public-read
+    - aws s3 cp ./images/ s3://your-bucket-name/images/ --recursive --acl public-read
 
 artifacts:
   files:
-    - '**/*'
+    - index.html
+    - styles.css
+    - images/*
