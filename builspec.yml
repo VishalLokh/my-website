@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo "Building website..."
+      - aws s3 cp index.html s3://your-bucket-name/ --content-type "text/html"
+artifacts:
+  files:
+    - '**/*'
