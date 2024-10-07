@@ -1,9 +1,15 @@
 version: 0.2
+
 phases:
+  install:
+    commands:
+      - echo "Installing dependencies (if any)..."
   build:
     commands:
-      - echo "Building website..."
-      - aws s3 cp index.html s3://your-bucket-name/ --content-type "text/html"
+      - echo "Building the project..."
+      - echo "Copying files to S3 bucket vishal-lokhande.com"
+      - aws s3 cp index.html s3://vishal-lokhande.com/ --content-type "text/html"
+
 artifacts:
   files:
     - '**/*'
