@@ -14,25 +14,20 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <!-- Updated with the correct image URL from your S3 bucket -->
-        <img src="https://vishal-lokhande.com/profile-pic.jpg" alt="Vishal Lokhande Profile Picture" width="120" height="120" style="border-radius: 50%;">
+        <!-- Add your profile image here with updated size -->
+        <img src="https://d3lzuqgnonxgai.cloudfront.net/path_to_image/Vishal.jpeg" alt="Vishal Lokhande Profile Picture" width="120" height="120" style="border-radius: 50%;">
         <p>Hello! I'm Vishal Lokhande, a Network Engineer with expertise in designing, deploying, and maintaining network infrastructures. I hold a Master's degree in Network Engineering from Southern Methodist University, where I gained hands-on experience with a wide range of networking technologies, including switching, routing, network automation, and cloud networking.</p>
-        <p>Throughout my career, I have worked with organizations to implement robust network solutions, troubleshoot complex network issues, and optimize network performance. I'm passionate about automating network configurations using tools like Python and Ansible, and I'm always eager to explore new technologies in the fields of networking and cloud infrastructure.</p>
-        <p>Currently, I'm based in Dallas, TX, and I'm actively looking for opportunities further to grow my skills in network engineering and automation.</p>
+        <p>Throughout my career, I have worked with various organizations to implement robust network solutions, troubleshoot complex network issues, and optimize network performance. I'm passionate about automating network configurations using tools like Python and Ansible, and I'm always eager to explore new technologies in the fields of networking and cloud infrastructure.</p>
+        <p>Currently, I'm based in Dallas, TX, and I'm actively looking for opportunities to further grow my skills in network engineering and automation.</p>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
         <p>Here are a few of the projects I have worked on:</p>
@@ -44,59 +39,31 @@
         </ul>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
+    <!-- New Section about the AWS CLI & GitHub automation project -->
+    <section id="website-project">
+        <h2>Automating Website Deployment with AWS CLI and GitHub</h2>
+        <p>In this project, I created a fully automated process for deploying and updating my personal website on AWS. Rather than using a CDN, I utilized AWS CLI and a custom Bash script to streamline the entire deployment process from my local machine to the AWS cloud. The key steps involved are:</p>
         <ul>
-            <li><strong>Networking:</strong> BGP, OSPF, MPLS, VLANs, VPNs, IP Routing, SDN, Wi-Fi 6</li>
-            <li><strong>Cloud Platforms:</strong> AWS, Google Cloud Platform, Azure</li>
-            <li><strong>Automation & Scripting:</strong> Python, Ansible, Bash, Jenkins, Terraform, Netmiko</li>
-            <li><strong>Tools:</strong> GNS3, Wireshark, Cisco IOS, Aruba CX, Docker, Kubernetes</li>
+            <li><strong>Website Development:</strong> I first developed the website locally using HTML, CSS, and other static files. This included creating an <code>index.html</code> page, along with associated stylesheets and images.</li>
+            <li><strong>AWS S3 Bucket Setup:</strong> I hosted the website using an AWS S3 bucket configured for static website hosting. The S3 bucket was set up to store the website files and make them accessible to users.</li>
+            <li><strong>Automation with AWS CLI:</strong> To ensure a smooth and continuous deployment process, I created a Bash script using AWS CLI commands. This script automates the upload of updated files from my local device directly to the S3 bucket, eliminating the need for manual updates.</li>
+            <li><strong>Version Control with GitHub:</strong> I used GitHub for version control, allowing me to track changes to the website’s codebase. Any updates made to the local code are committed to a GitHub repository, ensuring version history and collaboration support.</li>
+            <li><strong>Continuous Deployment:</strong> Whenever I make changes to the website locally, I run the Bash script to automatically push updates to the AWS S3 bucket, ensuring the website is always up-to-date without manual intervention.</li>
         </ul>
+        <p>This project showcases my ability to use cloud-based tools like AWS, along with Bash scripting and GitHub for automation, to create an efficient and scalable workflow for website deployment.</p>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Certified Network Professional (CCNP) - Cisco</strong></li>
-            <li><strong>AWS Certified Solutions Architect - Associate</strong></li>
-            <li><strong>Certified Kubernetes Administrator (CKA)</strong> (In Progress)</li>
-            <li><strong>CompTIA Network+ Certification</strong></li>
-        </ul>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p><em>"Vishal played a critical role in automating our network configurations, saving us a significant amount of time and reducing human errors. His expertise in Ansible and Python is exceptional." - <strong>Jane Doe, Senior Network Manager at XYZ Corp.</strong></em></p>
-        <p><em>"A thorough professional with excellent knowledge of network protocols and troubleshooting. Vishal has always been our go-to person for any network challenges." - <strong>John Smith, CTO at ABC Tech.</strong></em></p>
-    </section>
-
-    <!-- AWS Automation Project Section -->
-    <section id="aws-automation">
-        <h2>AWS Automation Project</h2>
-        <p>This portfolio website is part of an AWS automation project where I leveraged various AWS services to streamline the deployment and management process.</p>
-        <ul>
-            <li><strong>AWS S3:</strong> The website is hosted on Amazon S3, ensuring high availability and performance.</li>
-            <li><strong>AWS CodePipeline:</strong> The deployment of the website is automated using AWS CodePipeline, allowing continuous integration and delivery. Any updates committed to the GitHub repository are automatically deployed to the S3 bucket.</li>
-            <li><strong>AWS Lambda:</strong> A Lambda function is used to set the correct metadata automatically (`Content-Type: text/html`) for the files uploaded to the S3 bucket, ensuring proper display of the website content.</li>
-            <li><strong>Automation Scripts:</strong> I created automation scripts using Python and Bash for managing updates and deployments, reducing manual intervention.</li>
-        </ul>
-        <p>Overall, this project demonstrates my ability to integrate cloud services and automate deployment pipelines for real-world web applications.</p>
-    </section>
-
-    <!-- Contact Information Section -->
     <section id="contact">
         <h2>Contact Information</h2>
         <p>You can contact me via email at: <a href="mailto:vlokhande@smu.edu">vlokhande@smu.edu</a>.</p>
+
+        <!-- LinkedIn section -->
         <p>Connect with me on LinkedIn:</p>
         <a href="https://www.linkedin.com/in/vishal-lokhande05/" target="_blank">
             <img src="https://d3lzuqgnonxgai.cloudfront.net/path_to_image/linkedin-logo.png" alt="LinkedIn Profile" width="20" height="20" style="vertical-align: middle;">
         </a>
     </section>
 
-    <!-- Footer Section -->
     <footer>
         <p>© 2024 Vishal Lokhande - Network Engineer</p>
     </footer>
