@@ -6,6 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vishal Lokhande - Network Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,51 +71,29 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <!-- Add your profile image here with updated size -->
-        <img src="https://d3lzuqgnonxgai.cloudfront.net/path_to_image/Vishal.jpeg" alt="Vishal Lokhande Profile Picture" width="120" height="120" style="border-radius: 50%;">
-        <p>Hello! I'm Vishal Lokhande, a Network Engineer with expertise in designing, deploying, and maintaining network infrastructures. I hold a Master's degree in Network Engineering from Southern Methodist University, where I gained hands-on experience with a wide range of networking technologies, including switching, routing, network automation, and cloud networking.</p>
-        <p>Throughout my career, I have worked with various organizations to implement robust network solutions, troubleshoot complex network issues, and optimize network performance. I'm passionate about automating network configurations using tools like Python and Ansible, and I'm always eager to explore new technologies in the fields of networking and cloud infrastructure.</p>
-        <p>Currently, I'm based in Dallas, TX, and I'm actively looking for opportunities to further grow my skills in network engineering and automation.</p>
+        <img src="https://your-image-url.com/profile.jpg" alt="Vishal Lokhande Profile Picture" class="profile-pic">
+        <p>Hello! I'm Vishal Lokhande, a Network Engineer with expertise in designing, deploying, and maintaining robust network infrastructures. I hold a Master's degree in Network Engineering from Southern Methodist University, where I gained hands-on experience with advanced networking technologies.</p>
+        <p>I specialize in network automation using tools like Python and Ansible, and I have experience with cloud networking solutions. Currently, I'm based in Dallas, TX, and I'm passionate about learning and implementing new technologies in networking and automation.</p>
     </section>
 
     <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are a few of the projects I have worked on:</p>
+        <h2>Projects</h2>
         <ul>
-            <li><strong>Automated Network Configuration Management System:</strong> Streamlined network operations using Ansible, Python, and CI/CD pipelines to automate configuration deployment across a multi-vendor environment.</li>
-            <li><strong>Express WiFi VLAN Migration:</strong> Migrated customers from VLAN 102 to 235 using Linux scripting, automating the process with network automation tools.</li>
-            <li><strong>Three-Tier Campus Network Design:</strong> Designed a campus network using Aruba CX switches, implementing VSX for redundancy and Wi-Fi 6 technology for wireless connectivity.</li>
-            <li><strong>Cloud Network Simulation:</strong> Built a cloud-based network simulation using GNS3, VMs, and containers, focusing on leaf-spine architecture and network automation with Python and APIs.</li>
+            <li><strong>Automated Network Configuration:</strong> Used Ansible and Python to automate configuration deployment in a multi-vendor environment.</li>
+            <li><strong>Express WiFi VLAN Migration:</strong> Automated customer VLAN migrations using Linux scripting and network automation tools.</li>
+            <li><strong>Campus Network Design:</strong> Designed a three-tier campus network with Aruba CX switches, implementing VSX for redundancy and Wi-Fi 6 for wireless connectivity.</li>
+            <li><strong>Cloud Network Simulation:</strong> Simulated a cloud-based network using GNS3, focusing on leaf-spine architecture and network automation.</li>
         </ul>
-    </section>
-
-    <!-- New Section about the AWS CLI & GitHub automation project -->
-    <section id="website-project">
-        <h2>Automating Website Deployment with AWS CLI and GitHub</h2>
-        <p>In this project, I created a fully automated process for deploying and updating my personal website on AWS. Rather than using a CDN, I utilized AWS CLI and a custom Bash script to streamline the entire deployment process from my local machine to the AWS cloud. The key steps involved are:</p>
-        <ul>
-            <li><strong>Website Development:</strong> I first developed the website locally using HTML, CSS, and other static files. This included creating an <code>index.html</code> page, along with associated stylesheets and images.</li>
-            <li><strong>AWS S3 Bucket Setup:</strong> I hosted the website using an AWS S3 bucket configured for static website hosting. The S3 bucket was set up to store the website files and make them accessible to users.</li>
-            <li><strong>Automation with AWS CLI:</strong> To ensure a smooth and continuous deployment process, I created a Bash script using AWS CLI commands. This script automates the upload of updated files from my local device directly to the S3 bucket, eliminating the need for manual updates.</li>
-            <li><strong>Version Control with GitHub:</strong> I used GitHub for version control, allowing me to track changes to the website’s codebase. Any updates made to the local code are committed to a GitHub repository, ensuring version history and collaboration support.</li>
-            <li><strong>Continuous Deployment:</strong> Whenever I make changes to the website locally, I run the Bash script to automatically push updates to the AWS S3 bucket, ensuring the website is always up-to-date without manual intervention.</li>
-        </ul>
-        <p>This project showcases my ability to use cloud-based tools like AWS, along with Bash scripting and GitHub for automation, to create an efficient and scalable workflow for website deployment.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>You can contact me via email at: <a href="mailto:vlokhande@smu.edu">vlokhande@smu.edu</a>.</p>
-
-        <!-- LinkedIn section -->
-        <p>Connect with me on LinkedIn:</p>
-        <a href="https://www.linkedin.com/in/vishal-lokhande05/" target="_blank">
-            <img src="https://d3lzuqgnonxgai.cloudfront.net/path_to_image/linkedin-logo.png" alt="LinkedIn Profile" width="20" height="20" style="vertical-align: middle;">
-        </a>
+        <p>Email: <a href="mailto:vlokhande@smu.edu">vlokhande@smu.edu</a></p>
+        <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/vishal-lokhande05/" target="_blank">LinkedIn Profile</a></p>
     </section>
 
     <footer>
-        <p>© 2024 Vishal Lokhande - Network Engineer</p>
+        <p>&copy; 2024 Vishal Lokhande - Network Engineer</p>
     </footer>
 </body>
 </html>
